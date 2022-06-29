@@ -1,3 +1,4 @@
+import About from "./components/about/About";
 import Intro from "./components/Intro/Intro";
 
 const App = () => {
@@ -5,7 +6,7 @@ const App = () => {
     <div>
 
     <Intro />
-  
+    <About />
     </div>
   )
   
