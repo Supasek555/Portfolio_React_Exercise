@@ -2,7 +2,7 @@ import "./Product.css"
 
 
 
-const Product = () => {
+const Product = (props) => {
     return(
         <div className="p">
             <div className="p-browser">
@@ -11,8 +11,8 @@ const Product = () => {
                 <div className="p-circle"></div>
 
             </div>
-            <a href="" target="_blank" rel="noreferrences">
-                <img src="" alt="" className="p-img"/>
+            <a href={props.link} target="_blank" rel="noreferrences">
+                <img src={props.img} alt="" className="p-img"/>
             </a>
         </div>
     )
