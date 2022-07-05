@@ -2,13 +2,19 @@ import "./Contact.css"
 import FrenchToast from "../../img/f1.png"
 import FrenchToast2 from "../../img/f2.png"
 import Bible from "../../img/bible.png"
-import { useRef,useState } from "react"
+import { useRef,useState,useContext } from "react"
+import { ThemeContext } from "../../Context"
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
 
     const formRef = useRef()
     const [Done,setDone] = useState(false)
+
+
+    // Redux
+    const theme = useContext(ThemeContext)
+    const darkMode = theme.state.darkMode;
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -53,10 +59,22 @@ const Contact = () => {
                         <b>What's your story?</b> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque quae explicabo repellendus, numquam et quos labore! Cum ea veritatis corporis quibusdam labore ab porro.
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
-                        <input type="text" placeholder="Name" name="user_name" />
-                        <input type="text" placeholder="Subject" name="user_subject" />
-                        <input type="email" placeholder="Email" name="user_email" />
-                        <textarea name="message" placeholder="Your Message" rows="5"/>
+                        <input style={{
+                            backgroundColor: darkMode && "#333"
+                        }} type="text" placeholder="Name" name="user_name" />
+                        <input
+                        style={{
+                            backgroundColor: darkMode && "#333"
+                        }}
+                        type="text" placeholder="Subject" name="user_subject" />
+                        <input 
+                            style={{
+                                backgroundColor: darkMode && "#333"
+                            }}
+                        type="email" placeholder="Email" name="user_email" />
+                        <textarea style={{
+                            backgroundColor: darkMode && "#333"
+                        }} name="message" placeholder="Your Message" rows="5"/>
                         <button>Submit</button>
                     </form>
                     {Done && <h1>Thank You for Contacting Us</h1>}
