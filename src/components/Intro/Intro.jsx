@@ -1,20 +1,23 @@
 import "./Intro.css"
-import Hansome from "../../img/will.png"
+import Hansome from "../../img/chai.png"
 
 const Intro = () => {
     return (
         <div className="i">
             <div className="i-left">
                 <div className="i-left-wrapper">
-                    <h2 className="i-intro">Hello, My name is</h2>
-                    <h1 className="i-name">James Lhueng</h1>
+                    <h2 className="i-intro">Are you craving for some</h2>
+                    <h1 className="i-name">Chai?</h1>
+
+                    <h2>Here, We serve</h2>
                     <div className="i-title">
+                        
                         <div className="i-title-wrapper">
-                            <div className="i-title-item">Web Developer</div>
-                            <div className="i-title-item">UI/UX Designer</div>
-                            <div className="i-title-item">Cookery Master</div>
-                            <div className="i-title-item">Bible Student</div>
-                            <div className="i-title-item">Cambodia Invader</div>
+                            <div className="i-title-item">Garam Chai</div>
+                            <div className="i-title-item">Masala Chai</div>
+                            <div className="i-title-item">Kashmiri Qahwa</div>
+                            <div className="i-title-item">Elaichi Chai</div>
+                            <div className="i-title-item">Hot Elaichi Milk</div>
                         </div>
                     </div>
 

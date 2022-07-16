@@ -1,0 +1,15 @@
+.cl-crew-row{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+@media screen and (max-width: 480px){
+    .cl-crew-row{
+        overflow: scroll;
+    }
+}

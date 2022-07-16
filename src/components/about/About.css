@@ -79,6 +79,12 @@
     margin-bottom: 10px;
 }
 
+.a-award-card{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #ffed00;
+}
+
 @media screen and (max-width: 480px) {
     .a{
         flex-direction: column;
@@ -91,7 +97,7 @@
     }
 
     .a-card{
-        height: 30vh;
+        height: 40vh;
     }
 
     .a-card.bg, .a-award{
@@ -100,6 +106,12 @@
 
     .a-right{
         padding: 20px;
+    }
+
+    .a-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     
 }

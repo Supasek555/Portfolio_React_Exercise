@@ -5,6 +5,7 @@ import ProductList from "./components/SoupList/ProductList";
 import Toggle from "./components/Toggle/Toggle";
 import { useContext, useState } from "react";
 import { ThemeContext } from "./Context";
+import CardList from "./components/CardList/CardList";
 
 const App = () => {
   
@@ -21,6 +22,7 @@ const App = () => {
     <Toggle  />
     <Intro  />
     <About  />
+    <CardList />
     <ProductList  />
     <Contact  />
    

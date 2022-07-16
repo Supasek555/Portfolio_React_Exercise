@@ -1,6 +1,6 @@
 import "./About.css"
-import che from "../../img/mucho.jpg"
-import burrito from "../../img/b2.png"
+import che from "../../img/logo.png"
+import burrito from "../../img/chaiman.png"
 
 const About = () => {
     return (
@@ -13,22 +13,26 @@ const About = () => {
             </div>
             <div className="a-right">
                 <h1 className="a-title">
-                    About Me
+                    About Us
                 </h1>
 
                 <p className="a-sub">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ea quae porro vel exercitationem velit.
+                    We are first ever, Chai Wala or "Chai vendor" who sell and deliver joy to Khonkaen people.
                 </p>
 
                 <p className="a-desc">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel incidunt ex reprehenderit delectus harum ipsam expedita dicta fuga, ratione in blanditiis illum laborum assumenda repellendus? Molestias voluptas, facere excepturi iste officiis quae aut quidem sapiente obcaecati.
+                   We love Chai and all the traditions associate with Tea Drinking. It's really common in some culture that they will gather around and share a cup of tea. 
+                   Our mission is to deliver that kind of atmosphere here in Khonkaen, where one can come and enjoy warm and tasty tea in a cold morning of Khonkaen Winter.
                 </p>
 
                 <div className="a-award">
+                    <div className="a-award-card">
                     <img src={burrito} alt="" className="a-award-img" />
+                    </div>
+                    
                     <div className="a-award-texts">
-                        <h4 className="a-award-title">International Burrito</h4>
-                        <p className="a-award-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate vel soluta vitae asperiores, illo molestiae, qui eum facere omnis eaque molestias consequatur, suscipit distinctio.</p>
+                        <h4 className="a-award-title">Handsome Chai Lord</h4>
+                        <p className="a-award-desc">We gain this award by ourselves, we are the most handsome chai wala since we are the first ever Chai Wala here in Khonkaen.</p>
                     </div>
                 </div>
             </div>
